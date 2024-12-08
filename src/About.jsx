@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-section">
               <h1><span>About</span> Me</h1>
               <hr className='line'/>
-              <p>Hi, I'm Rakesh! I'm a passionate engineer currently pursuing my B.Tech in AI & DS at KNCET. I specialize in front-end development and generative AI, where I enjoy blending creativity with technical skills to build impactful solutions.</p>
+              <p>Hi, I'm Rakesh! I'm a passionate engineer currently pursuing my B.Tech in AI & DS at KNCET. I specialize in front-end development and generative AI, where I enjoy to build the products with tech's.</p>
             </div>
             <div className='my-works'>
                <h1><span>My</span> Works</h1>
@@ -46,7 +46,7 @@ const About = () => {
                                 <img src={java} alt="Java" />
                                 <h2>Java</h2>
                               </div>
-                              <p>I solve problems to enhance my logical and programming skills, and I create AWT software applications.</p>
+                              <p>I solve problems on multiple coding platforms to enhance my logical and programming skills.</p>
                             </div>
                     </div> 
                 </div>
