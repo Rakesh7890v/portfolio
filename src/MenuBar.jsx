@@ -14,7 +14,7 @@ const MenuBar = ({ closemenu, handleHide, setMenu, setMenuShow }) => {
     }
 
     const handleDownload = () => {
-        const url = '/resume.pdf'; // Path to the file in the public directory
+        const url = '../resume.pdf'; // Path to the file in the public directory
         const link = document.createElement('a');
         link.href = url;
         link.setAttribute('download', 'resume.pdf');
