@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import rocky from './images/rakesh.jpeg';
+import resume from './images/Rakesh_Resume.pdf';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -14,10 +15,9 @@ const MenuBar = ({ closemenu, handleHide, setMenu, setMenuShow }) => {
     }
 
     const handleDownload = () => {
-        const url = '../resume.pdf'; // Path to the file in the public directory
         const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'resume.pdf');
+        link.href = resume;
+        link.setAttribute('download', 'Rakesh_Resume.pdf');
         document.body.appendChild(link);
         link.click();
         link.remove();
@@ -27,10 +27,6 @@ const MenuBar = ({ closemenu, handleHide, setMenu, setMenuShow }) => {
         'Front-End Developer',
         'Programmer',
         'Gen-AI Enthusiast',
-        'AI Developer',
-        'UI/UX Designer',
-        'Tech Innovator',
-        'Machine Learning Practitioner'
     ];
     const [currentTagIndex, setCurrentTagIndex] = useState(0);
     const [displayText, setDisplayText] = useState('');
