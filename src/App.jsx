@@ -20,8 +20,11 @@ function App() {
   const [closemenu, setCloseMenu] = useState(
     localStorage.getItem('closeMenu') === 'true'
   );
-  // State for splash screen
   const [showSplash, setShowSplash] = useState(true);
+  const [displayText, setDisplayText] = useState('');
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
+  
+  const welcomeMessage = "Welcome to my Portfolio. Discover who I am and what I create.";
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,16 +44,26 @@ function App() {
     };
 
     handleResize();
-
     window.addEventListener('resize', handleResize);
 
-    const splashTimer = setTimeout(() => {
-      setShowSplash(false);
-    }, 4000);
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex < welcomeMessage.length) {
+        setDisplayText(welcomeMessage.substring(0, currentIndex + 1));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+        setIsTypingComplete(true);
+        
+        setTimeout(() => {
+          setShowSplash(false);
+        }, 3000);
+      }
+    }, 50);
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      clearTimeout(splashTimer);
+      clearInterval(typingInterval);
     };
   }, []);
 
@@ -75,10 +88,13 @@ function App() {
   return (
     <div className="App">
       {showSplash && (
-        <div className="splash-screen">
+        <div className={`splash-screen ${isTypingComplete ? 'fade-out' : ''}`}>
           <div className="splash-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover who I am and what I create</p>
+            <h1>RAKESH V</h1>
+            <div className="typewriter-container">
+              <p className="typewriter-text">{displayText}</p>
+              <span className={`cursor ${isTypingComplete ? 'hidden' : ''}`}>|</span>
+            </div>
           </div>
         </div>
       )}
