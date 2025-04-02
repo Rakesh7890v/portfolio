@@ -4,6 +4,7 @@ import fruit from './images/fruit.png';
 import finance from './images/finance.png';
 import bus from './images/bus.png';
 import work from './images/work.png';
+import ses from './images/ses.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,22 +13,22 @@ const Works = () => {
     const [projects, setProjects] = useState([
         {
             id: 1,
-            image: todo,
-            name: 'To-do-List',
-            tech: 'ReactJs',
-            desc: 'We can do our daily task effectively with the help of this website. It will store the tasks on localstorage. After do the task we can strike the task or otherwise we can delete and add new tasks.',
-            view: 'https://taskharborz.netlify.app/',
-            code:'https://github.com/Rakesh7890v/taskharbor',
+            image: ses,
+            name: 'Smart Education System',
+            tech: 'ReactJs, NodeJs, ExpressJs, Python, LangChain, GeminiAI API',
+            desc: 'The Out Smart Education System project integrates AI-driven learning with personalized assessments to enhance student engagement and understanding. It includes a Mock Interview feature that analyzes resumes and conducts AI-driven HR interviews, providing real-time feedback. This system helps students improve their communication skills and technical knowledge, preparing them for real-world job opportunities.',
+            view: 'https://www.youtube.com/watch?v=CcfI1-OWbqM',
+            code:'https://github.com/Rakesh20456/Smart_Education_System/',
             expanded: false
         },
         {
             id: 2,
-            image: fruit,
-            name: 'Fruit-shop',
+            image: work,
+            name: 'Employee Managment',
             tech: 'ReactJs',
-            desc: 'Fruit Shop, where fresh fruits meet convenience! Explore our selection, add to cart, and securely check out for a delightful fruit experience.',
-            view: 'https://fresh-carts.netlify.app/',
-            code:'https://github.com/Rakesh7890v/Fresh-carts',
+            desc: 'Companies may have many information like project, employee details so we need to maintain the details in a efficient way. We can store the employee details and manager send the message to administart for adding, deleting, updating the employee and project details.',
+            view: 'https://work-hub-system.netlify.app/',
+            code:'https://github.com/Rakesh7890v/Work-Hub',
             expanded: false
         },
         {
@@ -40,6 +41,7 @@ const Works = () => {
             code:'https://github.com/Rakesh7890v/Financial-growth',
             expanded: false
         },
+        
         {
             id: 4,
             image: bus,
@@ -52,14 +54,24 @@ const Works = () => {
         },
         {
             id: 5,
-            image: work,
-            name: 'Employee Managment',
+            image: fruit,
+            name: 'Fruit-shop',
             tech: 'ReactJs',
-            desc: 'Companies may have many information like project, employee details so we need to maintain the details in a efficient way. We can store the employee details and manager send the message to administart for adding, deleting, updating the employee and project details.',
-            view: 'https://work-hub-system.netlify.app/',
-            code:'https://github.com/Rakesh7890v/Work-Hub',
+            desc: 'Fruit Shop, where fresh fruits meet convenience! Explore our selection, add to cart, and securely check out for a delightful fruit experience.',
+            view: 'https://fresh-carts.netlify.app/',
+            code:'https://github.com/Rakesh7890v/Fresh-carts',
             expanded: false
-        }
+        },
+        {
+            id: 6,
+            image: todo,
+            name: 'To-do-List',
+            tech: 'ReactJs',
+            desc: 'We can do our daily task effectively with the help of this website. It will store the tasks on localstorage. After do the task we can strike the task or otherwise we can delete and add new tasks.',
+            view: 'https://taskharborz.netlify.app/',
+            code:'https://github.com/Rakesh7890v/taskharbor',
+            expanded: false
+        },
     ])
 
     const toggleExpand = (projectId) => {

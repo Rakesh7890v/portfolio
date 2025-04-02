@@ -11,7 +11,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import back from './images/background.mp4';
 
 function App() {
-
   const [showMenu, setMenuShow] = useState(
     localStorage.getItem('showMenu') === 'true'
   );
@@ -21,6 +20,8 @@ function App() {
   const [closemenu, setCloseMenu] = useState(
     localStorage.getItem('closeMenu') === 'true'
   );
+  // State for splash screen
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -43,8 +44,13 @@ function App() {
 
     window.addEventListener('resize', handleResize);
 
+    const splashTimer = setTimeout(() => {
+      setShowSplash(false);
+    }, 4000);
+
     return () => {
       window.removeEventListener('resize', handleResize);
+      clearTimeout(splashTimer);
     };
   }, []);
 
@@ -68,6 +74,15 @@ function App() {
 
   return (
     <div className="App">
+      {showSplash && (
+        <div className="splash-screen">
+          <div className="splash-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover who I am and what I create</p>
+          </div>
+        </div>
+      )}
+      
       {menu && <MenuBar closemenu={closemenu} handleHide={handleHide} setMenu={setMenu} setMenuShow={setMenuShow} />}
       <video autoPlay loop muted playsInline className='background-clip'>
         <source src={back} type='video/mp4'/>

@@ -7,7 +7,7 @@ const Resume = () => {
             id: 1,
             name: 'College',
             year: '2022-2026',
-            desc: 'I am currently pursuing my B.Tech 3rd year Artificial intelligence and Data science at Kongunadu college of engineering and technology.(* with 9.35 CGPA)',
+            desc: 'I am currently pursuing my B.Tech 3rd year Artificial intelligence and Data science at Kongunadu college of engineering and technology.(* with 9.30 CGPA)',
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const Resume = () => {
             id: 3,
             name: 'Secondary',
             year: '2019-2020',
-            desc: 'I did my Secondary at Desia Matriculation Hr sec scchool, Vellore (with 86.8%)'
+            desc: 'I did my Secondary at Desia Matriculation Hr sec scchool, Vellore (with 87%)'
         }
     ])
   return (
