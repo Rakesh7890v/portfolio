@@ -5,6 +5,7 @@ import finance from './images/finance.png';
 import bus from './images/bus.png';
 import work from './images/work.png';
 import ses from './images/ses.png';
+import ammai from './images/ammai.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,7 +16,7 @@ const Works = () => {
             id: 1,
             image: ses,
             name: 'Smart Education System',
-            tech: 'ReactJs, NodeJs, ExpressJs, Python, LangChain, GeminiAI API',
+            tech: 'ReactJs, NodeJs, ExpressJs, Python, LangChain and GeminiAI API',
             desc: 'The Out Smart Education System project integrates AI-driven learning with personalized assessments to enhance student engagement and understanding. It includes a Mock Interview feature that analyzes resumes and conducts AI-driven HR interviews, providing real-time feedback. This system helps students improve their communication skills and technical knowledge, preparing them for real-world job opportunities.',
             view: 'https://www.youtube.com/watch?v=CcfI1-OWbqM',
             code:'https://github.com/Rakesh20456/Smart_Education_System/',
@@ -23,6 +24,16 @@ const Works = () => {
         },
         {
             id: 2,
+            image: ammai,
+            name: 'Ammaiyappa Agency',
+            tech: 'ReactJS, NodeJS, ExpressJS and MongoDB',
+            desc: 'Developed a dynamic e-commerce platform for Ammaiyappa Agency, enabling the owner to efficiently manage products including chocolates, cool drinks, and magazines through a secure login system.',
+            view: 'https://ammaiyappa-agency.vercel.app/',
+            code:'https://github.com/Rakesh7890v/Ammaiyappa-Agency',
+            expanded: false
+        },
+        {
+            id: 3,
             image: work,
             name: 'Employee Managment',
             tech: 'ReactJs',
@@ -32,7 +43,7 @@ const Works = () => {
             expanded: false
         },
         {
-            id: 3,
+            id: 4,
             image: finance,
             name: 'Finance Managment',
             tech: 'ReactJs',
@@ -43,7 +54,7 @@ const Works = () => {
         },
         
         {
-            id: 4,
+            id: 5,
             image: bus,
             name: 'Bus ticket Booking',
             tech: 'ReactJs',
@@ -53,7 +64,7 @@ const Works = () => {
             expanded: false
         },
         {
-            id: 5,
+            id: 6,
             image: fruit,
             name: 'Fruit-shop',
             tech: 'ReactJs',
@@ -61,17 +72,7 @@ const Works = () => {
             view: 'https://fresh-carts.netlify.app/',
             code:'https://github.com/Rakesh7890v/Fresh-carts',
             expanded: false
-        },
-        {
-            id: 6,
-            image: todo,
-            name: 'To-do-List',
-            tech: 'ReactJs',
-            desc: 'We can do our daily task effectively with the help of this website. It will store the tasks on localstorage. After do the task we can strike the task or otherwise we can delete and add new tasks.',
-            view: 'https://taskharborz.netlify.app/',
-            code:'https://github.com/Rakesh7890v/taskharbor',
-            expanded: false
-        },
+        }
     ])
 
     const toggleExpand = (projectId) => {
