@@ -452,7 +452,11 @@ span {
   background: rgb(99, 99, 99, 0.7);
   color: rgb(238, 238, 238);
   width: 350px;
+<<<<<<< HEAD
   font-size: 1rem;
+=======
+  font-size: 1.5rem;
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
   font-weight: 500;
 }
 .project-right {
@@ -472,7 +476,11 @@ span {
   margin-left: 10px;
   font-size: 1rem;
   font-weight: 400;
+<<<<<<< HEAD
   color: rgb(88, 88, 88);
+=======
+  color: rgb(167, 167, 167);
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
   max-width: 300px;
 }
 .project-right .tech p {
@@ -583,10 +591,13 @@ span {
   .skills, .languages {
     border: none;
   }
+<<<<<<< HEAD
   .project-left div {
     font-size: 0.8rem;
     margin-top: -46px;
   }
+=======
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
 }
 @media (max-width: 700px) {
   .details-links {
@@ -598,7 +609,10 @@ span {
   .links h4 {
     margin-left: 20px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
 }
 @media (max-width: 610px) {
   .location iframe {
@@ -662,17 +676,25 @@ span {
     width: 350px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 400px) {
   .project-right .tech h5, .project-right .tech p {
     font-size: 0.7rem;
   }
 }
+=======
+
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
 @media (max-width: 366px) {
   .location iframe {
     width: 250px;
   }
   .detail p, .description p, .working p {
+<<<<<<< HEAD
     font-size: 0.8rem;
+=======
+    font-size: 0.9rem;
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
   }
   .project-left img {
     height: 100px;
@@ -680,7 +702,11 @@ span {
   }
   .project-left div {
     width: 200px;
+<<<<<<< HEAD
     font-size: 0.8rem;
+=======
+    font-size: 1rem;
+>>>>>>> 6b5128419d266a280e7b941509a59252a1abfc26
   }
   .project-right {
     margin: 0px;
