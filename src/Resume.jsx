@@ -7,7 +7,7 @@ const Resume = () => {
             id: 1,
             name: 'College',
             year: '2022-2026',
-            desc: 'I am currently pursuing my B.Tech 3rd year Artificial intelligence and Data science at Kongunadu college of engineering and technology.(* with 9.30 CGPA)',
+            desc: 'I am currently pursuing my B.Tech in Artificial intelligence and Data science at Kongunadu college of engineering and technology.(* with 9.30 CGPA)',
         },
         {
             id: 2,
